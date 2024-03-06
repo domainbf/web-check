@@ -162,7 +162,7 @@ const Home = (): JSX.Element => {
         <Input
           id="user-input"
           value={userInput}
-          label="输入网址获取详细信息"
+          label="输入网址获取网站详细信息"
           size="large"
           orientation="vertical"
           placeholder={placeholder}
