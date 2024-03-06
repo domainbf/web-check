@@ -171,7 +171,7 @@ const Home = (): JSX.Element => {
         />
         {/* <FindIpButton onClick={findIpAddress}>Or, find my IP</FindIpButton> */}
         { errorMsg && <ErrorMessage>{errorMsg}</ErrorMessage>}
-        <Button styles="width的: calc(100% - 1rem);" size="large" onClick={submit}>点击获取!</Button>
+        <Button styles="width的: calc(100% - 1rem);" size="large" onClick={submit}> 点击获取! </Button>
       </UserInputMain>
       <SiteFeaturesWrapper>
         <div className="features">
