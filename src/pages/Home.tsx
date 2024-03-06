@@ -162,7 +162,7 @@ const Home = (): JSX.Element => {
         <Input
           id="user-input"
           value={userInput}
-          label="请在下方输入要查询的有效网址"
+          label="输入网址获取详细信息"
           size="large"
           orientation="vertical"
           placeholder={placeholder}
