@@ -115,19 +115,15 @@ const About = (): JSX.Element => {
         </HeaderLinkContainer>
       </Nav>
 
-      <Heading as="h2" size="medium" color={colors.primary}>Intro</Heading>
+      <Heading as="h2" size="medium" color={colors.primary}>介绍</Heading>
       <Section>
         {about.map((para, index: number) => (
           <p key={index}>{para}</p>
         ))}
         <hr />
         <p>
-          Web-Check is developed and maintained by <a href="https://aliciasykes.com">Alicia Sykes</a>.
-          It's licensed under the <a href="https://github.com/Lissy93/web-check/blob/master/LICENSE">MIT license</a>,
-          and is completely free to use, modify and distribute in both personal and commercial settings.<br />
-          Source code and self-hosting docs are available on <a href="https://github.com/lissy93/web-check">GitHub</a>.
-          If you've found this service useful, consider <a href="https://github.com/sponsors/Lissy93">sponsoring me</a> from $1/month,
-          to help with the ongoing hosting and development costs.
+          首先感谢项目负责人及开源人 by <a href="https://aliciasykes.com">Alicia Sykes</a>.
+          本站部署旨在作为公益项目服务中使用，未考虑盈利问题，仅出于个人需要，并且想来应该不会有出我之外的其他人使用本款应用程序。
         </p>
       </Section>
       
