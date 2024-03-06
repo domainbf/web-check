@@ -213,26 +213,26 @@ const About = (): JSX.Element => {
       <Section>
       <Heading as="h3" size="small" color={colors.primary}>License</Heading>
         <b>
-          <a href="https://github.com/lissy93/web-check">Web-Check</a> is distributed under the MIT license,
-          © <a href="https://aliciasykes.com">Alicia Sykes</a> { new Date().getFullYear()}
+          <a href="https://shen.fan">不讲李</a> ©2024
+           感谢作者👉 <a href="https://aliciasykes.com">Alicia Sykes</a> { new Date().getFullYear()}
         </b>
         <br />
-        <small>For more info, see <a href="https://tldrlegal.com/license/mit-license">TLDR Legal → MIT</a></small>
+        <small> 了解更多👉<a href="https://tldrlegal.com/license/mit-license">TLDR Legal → MIT</a></small>
         <pre>{license}</pre>
         <hr />
-        <Heading as="h3" size="small" color={colors.primary}>Fair Use</Heading>
+        <Heading as="h3" size="small" color={colors.primary}>使用警告</Heading>
         <ul>
           {fairUse.map((para, index: number) => (<li>{para}</li>))}
         </ul>
         <hr />
-        <Heading as="h3" size="small" color={colors.primary}>Privacy</Heading>
+        <Heading as="h3" size="small" color={colors.primary}>隐私说明</Heading>
         <p>
-        Analytics are used on the demo instance (via a self-hosted Plausible instance), this only records the URL you visited but no personal data.
-        There's also some basic error logging (via a self-hosted GlitchTip instance), this is only used to help me fix bugs.
+        分析用于演示实例（通过自托管的 Plausible 实例），这仅记录您访问的 URL，但不记录个人数据。
+        还有一些基本的错误日志记录（通过自托管的 GlitchTip 实例），这仅用于帮助我修复错误。
         <br />
         <br />
-        Neither your IP address, browser/OS/hardware info, nor any other data will ever be collected or logged.
-        (You may verify this yourself, either by inspecting the source code or the using developer tools)
+        您的 IP 地址、浏览器/操作系统/硬件信息或任何其他数据都不会被收集或记录。
+        （您可以通过检查源代码或使用开发人员工具自行验证）
         </p>
       </Section>
     </AboutContainer>
