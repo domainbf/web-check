@@ -95,7 +95,7 @@ const SiteFeaturesWrapper = styled(StyledCard)`
 `;
 
 const Home = (): JSX.Element => {
-  const defaultPlaceholder = 'e.g. https://duck.com/';
+  const defaultPlaceholder = ' 例如：https://F.AF/';
   const [userInput, setUserInput] = useState('');
   const [errorMsg, setErrMsg] = useState('');
   const [placeholder] = useState(defaultPlaceholder);
@@ -157,12 +157,12 @@ const Home = (): JSX.Element => {
       <UserInputMain onSubmit={formSubmitEvent}>
         <Heading as="h1" size="xLarge" align="center" color={colors.primary}>
           <img width="64" src="/web-check.png" alt="Web Check Icon" />
-          网站信息获取
+          Network hacker
         </Heading>
         <Input
           id="user-input"
           value={userInput}
-          label="输入网址"
+          label="请在下方输入要查询的有效网址"
           size="large"
           orientation="vertical"
           placeholder={placeholder}
