@@ -179,7 +179,7 @@ const About = (): JSX.Element => {
 
 部署到Netlify</Heading>
       <Section>
-        <p>本站所有内容数据均出存在.</p>
+        <p>本站所有内容数据均储存在.</p>
         <Heading as="h3" size="small" color={colors.primary}>GitHub</Heading>
         <p>应用部署部署在 Netlify</p>
 
@@ -195,29 +195,29 @@ const About = (): JSX.Element => {
 
       </Section>
 
-      <Heading as="h2" size="medium" color={colors.primary}>API Documentation</Heading>
+      <Heading as="h2" size="medium" color={colors.primary}>API文档</Heading>
       <Section>
         {/* eslint-disable-next-line*/}
         <p>// Coming soon...</p>
       </Section>
 
-      <Heading as="h2" size="medium" color={colors.primary}>Additional Resources</Heading>
+      <Heading as="h2" size="medium" color={colors.primary}>其他资源</Heading>
       <AdditionalResources />
 
-      <Heading as="h2" size="medium" color={colors.primary}>Support Us</Heading>
+      <Heading as="h2" size="medium" color={colors.primary}>支持作者</Heading>
       <Section>
         {supportUs.map((para, index: number) => (<p dangerouslySetInnerHTML={{__html: para}} />))}
       </Section>
 
-      <Heading as="h2" size="medium" color={colors.primary}>Terms & Info</Heading>
+      <Heading as="h2" size="medium" color={colors.primary}>条款&信息</Heading>
       <Section>
-      <Heading as="h3" size="small" color={colors.primary}>License</Heading>
+      <Heading as="h3" size="small" color={colors.primary}>执照</Heading>
         <b>
           <a href="https://shen.fan">不讲李</a> ©2024
            感谢作者👉 <a href="https://aliciasykes.com">Alicia Sykes</a> { new Date().getFullYear()}
         </b>
         <br />
-        <small> 了解更多👉<a href="https://tldrlegal.com/license/mit-license">TLDR Legal → MIT</a></small>
+        <small> 了解更多👉<a href="https://tldrlegal.com/license/mit-license">TLDR 法律 → MIT</a></small>
         <pre>{license}</pre>
         <hr />
         <Heading as="h3" size="small" color={colors.primary}>使用警告</Heading>
