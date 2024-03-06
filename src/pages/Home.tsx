@@ -157,12 +157,12 @@ const Home = (): JSX.Element => {
       <UserInputMain onSubmit={formSubmitEvent}>
         <Heading as="h1" size="xLarge" align="center" color={colors.primary}>
           <img width="64" src="/web-check.png" alt="Web Check Icon" />
-          Web Check
+          网站信息获取
         </Heading>
         <Input
           id="user-input"
           value={userInput}
-          label="Enter a URL"
+          label="输入网址"
           size="large"
           orientation="vertical"
           placeholder={placeholder}
