@@ -175,7 +175,7 @@ const Home = (): JSX.Element => {
       </UserInputMain>
       <SiteFeaturesWrapper>
         <div className="features">
-          <Heading as="h2" size="small" color={colors.primary}>Supported Checks</Heading>
+          <Heading as="h2" size="small" color={colors.primary}>支持的部分功能展示</Heading>
           <ul>
             {docs.map((doc, index) => (<li key={index}>{doc.title}</li>))}
             <li><a href="/about">+ more!</a></li>
