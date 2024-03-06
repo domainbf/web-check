@@ -171,11 +171,11 @@ const Home = (): JSX.Element => {
         />
         {/* <FindIpButton onClick={findIpAddress}>Or, find my IP</FindIpButton> */}
         { errorMsg && <ErrorMessage>{errorMsg}</ErrorMessage>}
-        <Button styles="width的: calc(100% - 1rem);" size="large" onClick={submit}> 点击获取! </Button>
+        <Button styles="width的: calc(100% - 1rem);" size="large" onClick={submit}> 点击获取 </Button>
       </UserInputMain>
       <SiteFeaturesWrapper>
         <div className="features">
-          <Heading as="h2" size="small" color={colors.primary}>支持的部分功能展示</Heading>
+          <Heading as="h2" size="small" color={colors.primary}>支持的部分可查内容展示</Heading>
           <ul>
             {docs.map((doc, index) => (<li key={index}>{doc.title}</li>))}
             <li><a href="/about">+ more!</a></li>
