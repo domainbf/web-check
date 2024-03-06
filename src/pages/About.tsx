@@ -111,7 +111,7 @@ const About = (): JSX.Element => {
     <AboutContainer>
       <Nav>
         <HeaderLinkContainer>
-          <a href="https://github.com/lissy93/web-check"><Button>View on GitHub</Button></a>
+          <a href="https://lijiawei.cn"><Button>不讲李</Button></a>
         </HeaderLinkContainer>
       </Nav>
 
