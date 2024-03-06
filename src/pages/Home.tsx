@@ -189,7 +189,7 @@ const Home = (): JSX.Element => {
             <Button>whois信息查询</Button>
           </a>
           <a href="/about#api-documentation" title="View the API documentation, to use Web-Check programmatically">
-            <Button>API 文档</Button>
+            <Button>关于我</Button>
           </a>
         </div>
       </SiteFeaturesWrapper>
