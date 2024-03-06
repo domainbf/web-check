@@ -108,9 +108,9 @@ const Home = (): JSX.Element => {
     const addressType = determineAddressType(address);
   
     if (addressType === 'empt') {
-      setErrMsg('Field must not be empty');
+      setErrMsg('字段不能为空');
     } else if (addressType === 'err') {
-      setErrMsg('Must be a valid URL, IPv4 or IPv6 Address');
+      setErrMsg('必须是有效的 URL、IPv4 或 IPv6 地址');
     } else {
       // if the addressType is 'url' and address doesn't start with 'http://' or 'https://', prepend 'https://'
       if (addressType === 'url' && !/^https?:\/\//i.test(address)) {
@@ -131,7 +131,7 @@ const Home = (): JSX.Element => {
 
   // const findIpAddress = () => {
   //   setUserInput('');
-  //   setPlaceholder('Looking up your IP...');
+  //   setPlaceholder('查询你的IP...');
   //   setInputDisabled(true);
   //   fetch('https://ipapi.co/json/')
   //     .then(function(response) {
@@ -162,7 +162,7 @@ const Home = (): JSX.Element => {
         <Input
           id="user-input"
           value={userInput}
-          label="输入网址获取网站的详细信息"
+          label="输入网址或IP可查看详细信息"
           size="large"
           orientation="vertical"
           placeholder={placeholder}
@@ -171,7 +171,7 @@ const Home = (): JSX.Element => {
         />
         {/* <FindIpButton onClick={findIpAddress}>Or, find my IP</FindIpButton> */}
         { errorMsg && <ErrorMessage>{errorMsg}</ErrorMessage>}
-        <Button styles="width: calc(100% - 1rem);" size="large" onClick={submit}>点击获取!</Button>
+        <Button styles="width的: calc(100% - 1rem);" size="large" onClick={submit}>点击获取!</Button>
       </UserInputMain>
       <SiteFeaturesWrapper>
         <div className="features">
