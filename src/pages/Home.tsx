@@ -162,7 +162,7 @@ const Home = (): JSX.Element => {
         <Input
           id="user-input"
           value={userInput}
-          label="输入网址获取网站详细信息"
+          label="输入网址获取网站的详细信息"
           size="large"
           orientation="vertical"
           placeholder={placeholder}
@@ -189,7 +189,7 @@ const Home = (): JSX.Element => {
             <Button>whois信息查询</Button>
           </a>
           <a href="/about#api-documentation" title="View the API documentation, to use Web-Check programmatically">
-            <Button>API Docs</Button>
+            <Button>API 文档</Button>
           </a>
         </div>
       </SiteFeaturesWrapper>
