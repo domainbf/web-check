@@ -182,13 +182,13 @@ const Home = (): JSX.Element => {
           </ul>
         </div>
         <div className="links">
-          <a href="https://tools.st" title="Check out the source code and documentation on GitHub, and get support or contribute">
+          <a href="https://tools.st" title="一个域名注册比价，whois域名注册查询，dns域名历史等收集整理域名相关的网址导航。">
             <Button>域名注册比价</Button>
           </a>
-          <a href="https://whois.ls" title="Deploy your own private or public instance of Web-Check to Netlify">
+          <a href="https://whois.ls" title="免费的全球新顶级与国别域名注册情况查询平台">
             <Button>whois信息查询</Button>
           </a>
-          <a href="/about#api-documentation" title="View the API documentation, to use Web-Check programmatically">
+          <a href="/about#api-documentation" title="先锋少先队员及社会主义接班人">
             <Button>关于我</Button>
           </a>
         </div>
