@@ -123,7 +123,7 @@ const About = (): JSX.Element => {
         <hr />
         <p>
           首先感谢项目负责人及开源人 by <a href="https://aliciasykes.com">Alicia Sykes</a>.
-          本站部署旨在作为公益项目服务中使用，未考虑盈利问题，仅出于个人需要，并且想来应该不会有除我之外的其他人使用本款应用程序。
+          本站部署旨在作为公益项目服务中使用，未考虑盈利问题，仅出于个人需求搭建，并且想来应该不会有除我之外的其他人使用本款应用程序。
         </p>
       </Section>
       
@@ -175,9 +175,9 @@ const About = (): JSX.Element => {
         ))}
       </Section>
 
-      <Heading as="h2" size="medium" color={colors.primary}>本站托管在Netlify
+      <Heading as="h2" size="medium" color={colors.primary}>本站托管在GitHub
 
-部署到Netlify</Heading>
+部署在Netlify</Heading>
       <Section>
         <p>本站所有内容数据均储存在.</p>
         <Heading as="h3" size="small" color={colors.primary}>GitHub</Heading>
