@@ -188,7 +188,7 @@ const Home = (): JSX.Element => {
           <a href="https://whois.ls" title="免费的全球新顶级与国别域名注册情况查询平台">
             <Button>whois信息查询</Button>
           </a>
-          <a href="/about#api-documentation" title="先锋少先队员及社会主义接班人">
+          <a href="https://lijiawei.cn" title="先锋少先队员及社会主义接班人">
             <Button>关于我</Button>
           </a>
         </div>
