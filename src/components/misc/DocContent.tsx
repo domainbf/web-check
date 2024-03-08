@@ -42,7 +42,7 @@ const DocContent = (id: string) => {
         ))}
       </ul>
       <details>
-        <summary><Heading as="h4" size="small">Example</Heading></summary>
+        <summary><Heading as="h4" size="small">例子</Heading></summary>
         <img width="300" src={doc.screenshot} alt="Screenshot" />
       </details>
     </JobDocsContainer>)
