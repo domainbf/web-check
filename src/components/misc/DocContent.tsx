@@ -27,9 +27,9 @@ const DocContent = (id: string) => {
   return (
     doc? (<JobDocsContainer>
       <Heading as="h3" size="medium" color={colors.primary}>{doc.title}</Heading>
-      <Heading as="h4" size="small">About</Heading>
+      <Heading as="h4" size="small">关于</Heading>
       <p className="doc-desc">{doc.description}</p>
-      <Heading as="h4" size="small">Use Cases</Heading>
+      <Heading as="h4" size="small">用例</Heading>
       <p className="doc-uses">{doc.use}</p>
       <Heading as="h4" size="small">Links</Heading>
       <ul>
@@ -48,7 +48,7 @@ const DocContent = (id: string) => {
     </JobDocsContainer>)
   : (
     <JobDocsContainer>
-      <p>No Docs provided for this widget yet</p>
+      <p>尚未为此小部件提供文档</p>
     </JobDocsContainer>
     ));
 };
