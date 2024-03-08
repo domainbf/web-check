@@ -41,18 +41,17 @@ const Link = styled.a`
 `;
 
 const Footer = (props: { isFixed?: boolean }): JSX.Element => {
-  const licenseUrl = 'https://github.com/lissy93/web-check/blob/master/LICENSE';
-  const authorUrl = 'https://aliciasykes.com';
-  const githubUrl = 'https://github.com/lissy93/web-check';
-  return (
+  const licenseUrl = 'https://wubaohu.com/';
+  const authorUrl = 'https://shen.fan';
+  const githubUrl = 'https://aliciasykes.com';
+return (
   <StyledFooter style={props.isFixed ? {position: 'fixed'} : {}}>
     <span>
-      View source at <Link href={githubUrl}>github.com/lissy93/web-check</Link>
+      开源作者 <Link href={githubUrl}>Alicia Sykes</Link>
     </span>
     <span>
-      <Link href="/about">Web-Check</Link> is
-      licensed under <Link href={licenseUrl}>MIT</Link> -
-      © <Link href={authorUrl}>Alicia Sykes</Link> 2023
+      <Link href="/about">hack.whois.ls</Link>不获取任何个人信息 <Link href={licenseUrl}>隐私</Link> -
+      © <Link href={authorUrl}>不讲李</Link> 2024
     </span>
   </StyledFooter>
   );
