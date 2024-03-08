@@ -83,22 +83,22 @@ const ViewRaw = (props: { everything: { id: string, result: any}[] }) => {
     URL.revokeObjectURL(url);
   }
   return (
-    <Card heading="View / Download Raw Data" styles={CardStyles}>
+    <Card heading="查看/下载原始数据" styles={CardStyles}>
       <div className="controls">
-        <Button onClick={handleDownload}>Download Results</Button>
-        <Button onClick={fetchResultsUrl}>{resultUrl ? 'Update Results' : 'View Results'}</Button>
-        { resultUrl && <Button onClick={() => setResultUrl('') }>Hide Results</Button> }
+        <Button onClick={handleDownload}>下载结果</Button>
+        <Button onClick={fetchResultsUrl}>{resultUrl ? '更新结果' : '查看结果'}</Button>
+        { resultUrl && <Button onClick={() => setResultUrl('') }>隐藏结果</Button> }
       </div>
       { resultUrl && !error &&
       <>
-        <StyledIframe title="Results, via JSON Hero" src={resultUrl} />
-        <small>Your results are available to view <a href={resultUrl}>here</a>.</small>
+        <StyledIframe title="结果，来自 JSON Hero" src={resultUrl} />
+        <small>您的结果可供查看 <a href={resultUrl}>here</a>.</small>
       </>
       }
       { error && <p className="error">{error}</p> }
       <small>
-        These are the raw results generated from your URL, and in JSON format.
-        You can import these into your own program, for further analysis.
+        这些是从您的 URL 生成的 JSON 格式的原始结果。
+        您可以将它们导入您自己的程序中，以进行进一步分析。
       </small>
     </Card>
   );
