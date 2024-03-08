@@ -92,75 +92,76 @@ const resources = [
     title: 'SSL Labs Test',
     link: 'https://ssllabs.com/ssltest/analyze.html',
     icon: 'https://i.ibb.co/6bVL8JK/Qualys-ssl-labs.png',
-    description: 'Analyzes the SSL configuration of a server and grades it.',
+    description: '分析服务器的 SSL 配置并对其进行评分.',
   },
   {
     title: 'Virus Total',
     link: 'https://virustotal.com',
     icon: 'https://i.ibb.co/dWFz0RC/Virustotal.png',
-    description: 'Checks a URL against multiple antivirus engines.',
+    description: '针对多个防病毒引擎检查 URL.',
     searchLink: 'https://www.virustotal.com/gui/domain/{URL}',
   },
   {
     title: 'Shodan',
     link: 'https://shodan.io/',
     icon: 'https://i.ibb.co/SBZ8WG4/shodan.png',
-    description: 'Search engine for Internet-connected devices.',
+    description: '互联网连接设备的搜索引擎.',
     searchLink: 'https://www.shodan.io/search/report?query={URL}',
   },
   {
     title: 'Archive',
     link: 'https://archive.org/',
     icon: 'https://i.ibb.co/nfKMvCm/Archive-org.png',
-    description: 'View previous versions of a site via the Internet Archive.',
+    description: '通过互联网档案馆查看站点的先前版本.',
     searchLink: 'https://web.archive.org/web/*/{URL}',
   },
   {
     title: 'URLScan',
     link: 'https://urlscan.io/',
     icon: 'https://i.ibb.co/cYXt8SH/Url-scan.png',
-    description: 'Scans a URL and provides information about the page.',
+    description: '扫描 URL 并提供有关页面的信息.',
   },
   {
     title: 'Sucuri SiteCheck',
     link: 'https://sitecheck.sucuri.net/',
     icon: 'https://i.ibb.co/K5pTP1K/Sucuri-site-check.png',
-    description: 'Checks a URL against blacklists and known threats.',
+    description: '根据黑名单和已知威胁检查 URL
+      健康情况.',
     searchLink: 'https://www.ssllabs.com/ssltest/analyze.html?d={URL}',
   },
   {
     title: 'Domain Tools',
     link: 'https://whois.domaintools.com/',
     icon: 'https://i.ibb.co/zJfCKjM/Domain-tools.png',
-    description: 'Run a WhoIs lookup on a domain.',
+    description: 'WhoIs 信息查找.',
     searchLink: 'https://whois.domaintools.com/{URL}',
   },
   {
     title: 'NS Lookup',
     link: 'https://nslookup.io/',
     icon: 'https://i.ibb.co/BLSWvBv/Ns-lookup.png',
-    description: 'View DNS records for a domain.',
+    description: '查看域的 DNS 记录.',
     searchLink: 'https://www.nslookup.io/domains/{URL}/dns-records/',
   },
   {
     title: 'DNS Checker',
     link: 'https://dnschecker.org/',
     icon: 'https://i.ibb.co/gyKtgZ1/Dns-checker.webp',
-    description: 'Check global DNS propagation across multiple servers.',
+    description: '检查跨多个服务器的全局 DNS 传播.',
     searchLink: 'https://dnschecker.org/#A/{URL}',
   },
   {
     title: 'Censys',
     link: 'https://search.censys.io/',
     icon: 'https://i.ibb.co/j3ZtXzM/censys.png',
-    description: 'Lookup hosts associated with a domain.',
+    description: '查找与域关联的主机.',
     searchLink: 'https://search.censys.io/search?resource=hosts&q={URL}',
   },
   {
     title: 'Page Speed Insights',
     link: 'https://developers.google.com/speed/pagespeed/insights/',
     icon: 'https://i.ibb.co/k68t9bb/Page-speed-insights.png',
-    description: 'Checks the performance, accessibility and SEO of a page on mobile + desktop.',
+    description: '检查移动+桌面页面的性能、可访问性和 SEO.',
     searchLink: 'https://developers.google.com/speed/pagespeed/insights/?url={URL}',
   },
   {
@@ -174,34 +175,34 @@ const resources = [
     title: 'DNS Dumpster',
     link: 'https://dnsdumpster.com/',
     icon: 'https://i.ibb.co/DtQ2QXP/Trash-can-regular.png',
-    description: 'DNS recon tool, to map out a domain from it\'s DNS records',
+    description: 'DNS 侦察工具，用于从 DNS 记录中映射出域',
     searchLink: '',
   },
   {
     title: 'BGP Tools',
     link: 'https://bgp.tools/',
     icon: 'https://i.ibb.co/zhcSnmh/Bgp-tools.png',
-    description: 'View realtime BGP data for any ASN, Prefix or DNS',
+    description: '查看任何 ASN、前缀或 DNS 的实时 BGP 数据',
   },
   {
     title: 'Similar Web',
     link: 'https://similarweb.com/',
     icon: 'https://i.ibb.co/9YX8x3c/Similar-web.png',
-    description: 'View approx traffic and engagement stats for a website',
+    description: '查看网站的大约流量和参与度统计数据',
     searchLink: 'https://similarweb.com/website/{URL}',
   },
   {
     title: 'Blacklist Checker',
     link: 'https://blacklistchecker.com/',
     icon: 'https://i.ibb.co/7ygCyz3/black-list-checker.png',
-    description: 'Check if a domain, IP or email is present on the top blacklists',
+    description: '检查域名、IP 或电子邮件是否出现在顶级黑名单中',
     searchLink: 'https://blacklistchecker.com/check?input={URL}',
   },
   {
     title: 'Cloudflare Radar',
     link: 'https://radar.cloudflare.com/',
     icon: 'https://i.ibb.co/DGZXRgh/Cloudflare.png',
-    description: 'View traffic source locations for a domain through Cloudflare',
+    description: '通过 Cloudflare 查看域的流量源位置',
     searchLink: 'https://radar.cloudflare.com/domains/domain/{URL}',
   },
 ];
@@ -235,9 +236,9 @@ const AdditionalResources = (props: { url?: string }): JSX.Element => {
       }
     </ResourceListOuter>
     <Note>
-      These tools are not affiliated with Web-Check. Please use them at your own risk.<br />
-      At the time of listing, all of the above were available and free to use
-      - if this changes, please report it via GitHub (<a href="https://github.com/lissy93/web-check">lissy93/web-check</a>).
+      这些工具不隶属于本站。请自行承担使用它们的风险.<br />
+      截至目前，以上所有内容均可免费使用
+      - 如果发生变化，请通过 邮箱 报告 (<a href="https://shen.fan">提交错误</a>).
     </Note>
   </Card>);
 }
